@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 10, 2017, 9:09:28 AM
+    Author     : macbookpro
+*/
+
+.pulsatingCircle{
+    width:25px;
+    height:25px;
+    display:block;
+    position:relative;
+    transform:scale(3,3);
+    -webkit-transform:scale(3,3);
+}
+
+.w3-btnP,.w3-buttonP{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-btnP,.w3-buttonP{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+
+
+.firstCircle,
+.secondCircle,
+.thirdCircle{
+    top:50%;
+    left:50%;
+    display:block;
+    border-radius:50%;
+    position:absolute;
+    vertical-align:middle;
+}
+
+.firstCircle{
+    width:10px;
+    height:10px;
+    margin:-6px 0 0px -6px;
+    background-color:#a0002b;
+}
+
+
+.secondCircle{
+    width:16px;
+    height:16px;
+    margin:-9px 0 0 -9px;
+    border:1px solid #a0002b;
+    animation:2000ms pulseIn ease-in-out infinite;
+    -webkit-animation:2000ms pulseIn ease-in-out infinite;						
+}
+
+@keyframes pulseIn{
+    0%{
+        opacity:0;
+        transform:scale(0.2,0.2);
+    }
+    50%{
+        opacity:1;
+        transform:scale(1,1);
+    }
+    100%{
+        opacity:0;
+        transform:scale(0.2,0.2);
+    }
+}
+
+@-webkit-keyframes pulseIn{
+    0%{
+        opacity:0;
+        -webkit-transform:scale(0.2,0.2);
+    }
+    50%{
+        opacity:1;
+        -webkit-transform:scale(1,1);
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(0.2,0.2);
+    }
+}
+
+.thirdCircle{
+    width:24px;
+    height:24px;
+    border:1px solid #a0002b;
+    margin:-13px 0 0 -13px;
+    animation:2000ms pulseIn 500ms ease-in-out infinite;
+    -webkit-animation:2000ms pulseIn 500ms ease-in-out infinite		
+}
